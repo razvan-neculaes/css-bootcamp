@@ -1,6 +1,12 @@
+.container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: 1fr 2fr 3fr 5fr;
+}
+
 .zone {
   cursor: pointer;
-  display: inline-block;
   text-align: center;
   font-size: 10em;
   transition: all 0.3s linear;
@@ -10,7 +16,7 @@
 
 .zone:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
-    transform: scale(1.15);
+    transform: scale(1.05);
 }
 
 .green {
