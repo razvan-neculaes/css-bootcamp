@@ -1,56 +1,56 @@
-body {
-    margin: 0px;
+.zone {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  font-size: 10em;
+  transition: all 0.3s linear;
+  border: 1px solid #bbb;
+  border-radius: 4px;
 }
 
-h1 {
-    font-family: 'Fredericka the Great', 'Impact', fantasy;
-    font-size: 3em;
-    border-bottom: 2px solid pink;
-    border-right: 2px solid pink;
-    width: 400px;
-    text-align: center;
-    -moz-box-shadow: 4px 4px 5px #888888;
-    -ms-box-shadow: 4px 4px 5px #888888;
-    -o-box-shadow: 4px 4px 5px #888888;
-    -webkit-box-shadow: 4px 4px 5px #888888;
-    box-shadow: 4px 4px 5px #888888;
-    margin-top: 10px;
+.zone:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    transform: scale(1.15);
 }
 
-h2 {
-    color: blue;
+.green {
+    background: #56B870;
+    background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%);
+    background: -webkit-linear-gradient(top, #56B870 0%, #a5c956 100%);
+    background: linear-gradient(to bottom, #56B870 0%, #a5c956 100%);
 }
 
-p {
-    font-size: 10px;
+.red {
+    background: #FF5F6D;
+    background: -moz-linear-gradient(top, #FF5F6D 0%, #FFC371 100%);
+    background: -webkit-linear-gradient(top, #FF5F6D 0%, #FFC371 100%);
+    background: linear-gradient(to bottom, #FF5F6D 0%, #FFC371 100%);
 }
 
-span {
-    font-size: 2em;
+.blue {
+    background: #36D1DC;
+    background: -moz-linear-gradient(top, #36D1DC 0%, #5B86E5 100%);
+    background: -webkit-linear-gradient(top, #36D1DC 0%, #5B86E5 100%);
+    background: linear-gradient(to bottom, #36D1DC 0%, #5B86E5 100%);
 }
 
-img {
-    width: 450px;
-    height: 300px;
-    margin: 10px;
-    transition: all 5s;
+.yellow {
+    background: #F7971E;
+    background: -moz-linear-gradient(top, #F7971E 0%, #FFD200 100%);
+    background: -webkit-linear-gradient(top, #F7971E 0%, #FFD200 100%);
+    background: linear-gradient(to bottom, #F7971E 0%, #FFD200 100%);
 }
 
-img:hover {
-    transform: scale(1.1);
+.purple {
+    background: #8E2DE2;
+    background: -moz-linear-gradient(top, #8E2DE2 0%, #4A00E0 100%);
+    background: -webkit-linear-gradient(top, #8E2DE2 0%, #4A00E0 100%);
+    background: linear-gradient(to bottom, #8E2DE2 0%, #4A00E0 100%);
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.boxmodel {
-    border: 5px solid red;
-    display: inline-block;
-    padding: 5px 20px;
-    margin: 0px 20px;
-    width: 33px;
-    height: 55px;
+.brown {
+    background: #A52A2A;
+    background: -moz-linear-gradient(top, #A52A2A 0%, #8B4513 100%);
+    background: -webkit-linear-gradient(top, #A52A2A 0%, #8B4513 100%);
+    background: linear-gradient(to bottom, #A52A2A 0%, #8B4513 100%);
 }
