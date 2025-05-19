@@ -1,44 +1,115 @@
 body {
     margin: 0;
-    display: grid;
-    grid-template-rows: auto auto 1fr auto;
-    min-height: 100vh;
+    font-family: Arial, sans-serif; /* Optional: improves readability */
 }
+
+/* Header styling */
 header {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    background-color: green;
-    padding: 10px;
+    background: linear-gradient(to right, #90EE90, #228B22); /* Gradient from bright to dark green */
+    padding: 0.625rem; /* 10px */
+    display: flex;
+    align-items: center;
+    position: relative;
 }
-header a {
+
+/* Hamburger icon (hidden by default on larger screens) */
+.hamburger {
+    display: none;
+    font-size: 1.5rem; /* 24px */
+    color: white;
+    cursor: pointer;
+    padding: 0.625rem;
+}
+
+/* Navigation styling for big and medium screens */
+header nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+header nav a {
+    margin-right: 1rem; /* Spacing between items */
     color: white;
     text-decoration: none;
-    text-align: center;
-    padding: 10px;
 }
+
+header nav a:last-child {
+    margin-right: 0;
+    margin-left: auto; /* Pushes "Contact" to the right */
+}
+
+/* Mobile view (max-width: 768px) */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show hamburger icon */
+    }
+
+    header nav {
+        display: none; /* Hide menu by default */
+        position: absolute;
+        top: 100%; /* Position below header */
+        left: 0;
+        width: 100%;
+        background: linear-gradient(to right, #90EE90, #228B22); /* Match header gradient */
+    }
+
+    header.active nav {
+        display: block; /* Show menu when active */
+    }
+
+    header nav a {
+        display: block; /* Stack items vertically */
+        padding: 0.5rem;
+        margin-right: 0; /* Remove horizontal spacing */
+    }
+
+    header nav a:last-child {
+        margin-left: 0; /* Reset margin-left for vertical layout */
+    }
+}
+
 .cover {
     background-color: red;
     text-align: center;
-    padding: 50px 0;
+    padding: 9rem 0; /* 50px equivalent */
     color: white;
-    font-size: 24px;
+    font-size: 1.5rem; /* 24px equivalent */
 }
+
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    background-color: lightblue;
-    padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
+  gap: 1rem; /* Adds spacing between tiles */
+  margin: 1rem; /* Add gap around the gallery */
 }
+
 .gallery-item {
-    background-color: darkgray;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 150px;
+  aspect-ratio: 1 / 1; /* Ensures each tile is a perfect square */
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  background-color: #f0f0f0; /* Optional: background for visibility */
+  border: 1px solid #ccc; /* Optional: border for visibility */
+  font-size: 10em;
 }
+
+/* Medium screens: Switch to 2 columns (tablets and landscape mobiles) */
+@media (max-width: 1200px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small screens: Switch to 1 column (portrait mobiles) */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
 footer {
     background-color: yellow;
     text-align: center;
-    padding: 10px;
+    padding: 0.625rem; /* 10px equivalent */
 }
