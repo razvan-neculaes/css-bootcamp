@@ -5,7 +5,7 @@ body {
 
 /* Header styling */
 header {
-    background: linear-gradient(to right, #90EE90, #228B22); /* Gradient from bright to dark green */
+    background: linear-gradient(to left, #90EE90, #228B22); /* Gradient from bright to dark green */
     padding: 0.625rem; /* 10px */
     display: flex;
     align-items: center;

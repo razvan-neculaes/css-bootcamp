@@ -1,6 +1,3 @@
-//import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'bootstrap';
-
 import WebFont from 'webfontloader';
 
 WebFont.load({
