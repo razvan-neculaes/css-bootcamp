@@ -10,3 +10,4 @@ WebFont.load({
 });
 
 import './css/style.css';
+import './css/style2.css';
