@@ -5,11 +5,13 @@ body {
 
 /* Header styling */
 header {
+    position: sticky;
+    top: 0; /* Sticks the header to the top of the viewport */
+    z-index: 1; /* Ensures the header stays above other content */
     background: linear-gradient(to left, #90EE90, #228B22); /* Gradient from bright to dark green */
     padding: 0.625rem; /* 10px */
     display: flex;
     align-items: center;
-    position: relative;
 }
 
 /* Hamburger icon (hidden by default on larger screens) */
