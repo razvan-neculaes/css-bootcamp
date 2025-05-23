@@ -94,7 +94,7 @@ header nav a:last-child {
   align-items: center; /* Centers content vertically */
   background-color: #f0f0f0; /* Optional: background for visibility */
   border: 1px solid #ccc; /* Optional: border for visibility */
-  font-size: 15em;
+  font-size: 10vw;
 }
 
 /* Medium screens: Switch to 2 columns (tablets and landscape mobiles) */
@@ -102,12 +102,18 @@ header nav a:last-child {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
+  .gallery-item {
+    font-size: 20vw; /* Adjust for small screens */
+  }
 }
 
 /* Small screens: Switch to 1 column (portrait mobiles) */
 @media (max-width: 768px) {
   .gallery {
     grid-template-columns: 1fr;
+  }
+  .gallery-item {
+    font-size: 32vw; /* Adjust for small screens */
   }
 }
 
