@@ -1,22 +1,22 @@
-.container {
+/*.container {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-template-rows: 1fr
-}
+}*/
 
 .zone {
     /*
      * Padding around the content inside the element.
      * Top/bottom padding: 30px, left/right padding: 50px.
      */
-    padding: 30px 50px;
+    /*padding: 30px 50px;*/
 
     /*
      * Margin outside the element.
      * Top/bottom margin: 40px, left/right margin: 60px.
      */
-    margin: 40px 60px;
+    /*margin: 40px 60px;*/
 
     /*
      * Changes the cursor to a pointer when hovering over the element,
@@ -28,7 +28,7 @@
      * Displays the element as an inline-level block container.
      * The element will flow with the text but can have width/height and padding/margin.
      */
-    display: inline-block;
+    /*display: inline-block;*/
 
     /*
      * Sets the text color to white.
@@ -67,10 +67,51 @@
      * 'inset' makes the shadow appear inside the element.
      * Vendor prefixes are included for broader browser compatibility.
      */
-    -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset;
-    -moz-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset;
-    -o-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset;
-    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset;
+    -webkit-box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.8);
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.main-nav {
+    /*
+     * Sets the display property to flex, enabling a flex container.
+     * This allows for flexible box layout within the navigation.
+     */
+    display: flex;
+
+    /*
+     * Removes the default bullet points or numbering from list items.
+     */
+    list-style: none;
+
+    /*
+     * Sets the font size of the navigation text to 0.7 times the parent's font size.
+     */
+    font-size: 0.7em;
+
+    /*
+     * Removes any default margin around the navigation element.
+     */
+    margin: 0;
+}
+
+li {
+    /*
+     * Adds 20 pixels of padding around each list item.
+     */
+    padding: 20px;
+}
+
+a {
+    /*
+     * Sets the color of the anchor (link) text to a light gray/off-white.
+     */
+    color: #f5f5f6;
+
+    /*
+     * Removes the default underline from anchor links.
+     */
+    text-decoration: none;
 }
 
 .green {
