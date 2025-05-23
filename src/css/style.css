@@ -84,7 +84,7 @@ header nav a:last-child {
   grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
   gap: 2.5rem; /* Adds spacing between tiles */
   padding: 2.5rem; /* Optional: Add padding to ensure the blue background is visible around the edges */
-  background-color: blue; /* Set the background color to blue */
+  background: linear-gradient(to bottom, #0000ff, #00ffff); /* Gradient from blue to cyan */
 }
 
 .gallery-item {
@@ -118,7 +118,7 @@ header nav a:last-child {
 }
 
 footer {
-    background-color: yellow;
+    background: linear-gradient(to bottom, #ffa500, #ffff00); /* Gradient from orange to yellow */
     text-align: center;
     padding: 0.625rem; /* 10px equivalent */
 }
