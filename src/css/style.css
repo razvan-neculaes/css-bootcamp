@@ -8,7 +8,7 @@ header {
     position: sticky;
     top: 0; /* Sticks the header to the top of the viewport */
     z-index: 1; /* Ensures the header stays above other content */
-    background: linear-gradient(to left, #90EE90, #228B22); /* Gradient from bright to dark green */
+    background: linear-gradient(to top, #90EE90, #228B22); /* Gradient from bright to dark green */
     padding: 0.625rem; /* 10px */
     display: flex;
     align-items: center;
@@ -72,9 +72,9 @@ header nav a:last-child {
 }
 
 .cover {
-    background-color: red;
+    background: linear-gradient(to bottom, #8b008b, #8b0000);
     text-align: center;
-    padding: 9rem 0; /* 50px equivalent */
+    padding: 10rem 0; /* 50px equivalent */
     color: white;
     font-size: 1.5rem; /* 24px equivalent */
 }
@@ -82,8 +82,9 @@ header nav a:last-child {
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
-  gap: 1rem; /* Adds spacing between tiles */
-  margin: 1rem; /* Add gap around the gallery */
+  gap: 2.5rem; /* Adds spacing between tiles */
+  padding: 2.5rem; /* Optional: Add padding to ensure the blue background is visible around the edges */
+  background-color: blue; /* Set the background color to blue */
 }
 
 .gallery-item {
@@ -93,7 +94,7 @@ header nav a:last-child {
   align-items: center; /* Centers content vertically */
   background-color: #f0f0f0; /* Optional: background for visibility */
   border: 1px solid #ccc; /* Optional: border for visibility */
-  font-size: 10em;
+  font-size: 15em;
 }
 
 /* Medium screens: Switch to 2 columns (tablets and landscape mobiles) */
