@@ -218,6 +218,10 @@ a {
     margin-left: auto;
 }
 
+.cover {
+    width: 30rem;
+}
+
 footer {
     text-align: center;
     padding: 10px;
