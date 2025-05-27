@@ -111,6 +111,84 @@ a {
     text-decoration: none;
 }
 
+/*
+ * Media query: Styles applied only when the screen width is 600px or less.
+ * This is typically used for mobile-first or responsive design adjustments.
+ */
+@media only screen and (max-width: 600px) {
+    /*
+     * Styles for the .main-nav class within the media query.
+     * These styles will override the default .main-nav styles on smaller screens.
+     */
+    .main-nav {
+        /*
+         * Reduces the font size of the main navigation to 0.5 times the parent's font size
+         * when the screen width is 600px or less.
+         */
+        font-size: 0.5em;
+
+        /*
+         * Removes any padding from the main navigation on smaller screens.
+         */
+        padding: 0;
+    }
+}
+
+/* COVER */
+.container {
+    /*
+     * Sets the display property to flex, enabling a flex container.
+     * This allows for flexible box layout within the container.
+     */
+    display: flex;
+
+    /*
+     * Aligns flex items along the cross axis (vertically, by default)
+     * to the center of the container.
+     */
+    align-items: center;
+
+    /*
+     * Aligns flex items along the main axis (horizontally, by default)
+     * to the center of the container.
+     */
+    justify-content: center;
+
+    /*
+     * Sets a fixed height for the container.
+     */
+    height: 50vh;
+}
+
+.grid-wrapper {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.box {
+    background-color: #444;
+    padding: 150px;
+    margin: 20px;
+}
+
+.box > span {
+    width: 100%;
+    font-size: 2em;
+}
+
+/*
+ * Utility class to push an element to the right.
+ * Often used in flexbox layouts to create space.
+ */
+.push {
+    /*
+     * Sets the left margin to 'auto'. In a flex container, this will push
+     * the element as far right as possible, consuming available space on its left.
+     */
+    margin-left: auto;
+}
+
 .green {
     grid-column: span 2;
     grid-row: 1/3;
