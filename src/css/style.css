@@ -160,23 +160,52 @@ a {
     height: 50vh;
 }
 
+/* GRID LAYOUT */
 .grid-wrapper {
+    /*
+     * Sets the display property to grid, enabling a grid container.
+     * This allows for powerful two-dimensional layouts.
+     */
     display: grid;
-    gap: 20px;
+
+    /*
+     * Sets the gap between grid rows and columns to 20 pixels.
+     */
+    grid-gap: 20px;
+
+    /*
+     * Defines the columns of the grid.
+     * `repeat(auto-fill, minmax(350px, 1fr))` creates as many columns as can fit,
+     * each with a minimum width of 350px and a maximum width of 1 fractional unit
+     * of the available space. This makes the grid responsive.
+     */
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
+.box > img {
+    /*
+     * Ensures that images directly inside an element with the class 'box'
+     * take up 100% of their parent's width, scaling responsively.
+     */
+    width: 100%;
+}
+
 .box {
+    /*
+     * Sets the background color of elements with the class 'box' to a dark gray.
+     */
     background-color: #444;
-    padding: 150px;
+
+    /*
+     * Adds 130 pixels of padding around the content inside elements with the class 'box'.
+     */
+    padding: 130px;
+
+    /*
+     * Adds 20 pixels of margin around elements with the class 'box'.
+     */
     margin: 20px;
 }
-
-.box > span {
-    width: 100%;
-    font-size: 2em;
-}
-
 /*
  * Utility class to push an element to the right.
  * Often used in flexbox layouts to create space.
