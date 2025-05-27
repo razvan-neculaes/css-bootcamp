@@ -1,5 +1,12 @@
 body {
     margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
 }
 
 .zone {
@@ -67,6 +74,20 @@ body {
     -webkit-box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.8);
     -moz-box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.8);
     box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.box:hover {
+    /*
+     * Adds an inner box-shadow effect when the element is hovered over.
+     * This creates a subtle visual lift and depth.
+     * The shadow is black with 80% opacity, 0px horizontal offset,
+     * 5px vertical offset, and a 15px blur radius.
+     * 'inset' makes the shadow appear inside the element.
+     * Vendor prefixes are included for broader browser compatibility.
+     */
+    -webkit-transform: inset 0px 5px 15px rgba(0, 0, 0, 0.8);
+    -moz-transform: inset 0px 5px 15px rgba(0, 0, 0, 0.8);
+    transform: inset 0px 5px 15px rgba(0, 0, 0, 0.8);
 }
 
 .main-nav {
